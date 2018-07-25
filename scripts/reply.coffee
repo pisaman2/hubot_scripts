@@ -13,3 +13,6 @@ module.exports = (robot) ->
 
   robot.hear /Is it lunch yet?/i, (res) ->
     res.send "According to formal tradition, Lunch cannot be discussed until 11am."
+  
+  robot.hear /git test/i, (res) ->
+    res.send "test"
