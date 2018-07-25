@@ -14,5 +14,6 @@ module.exports = (robot) ->
   robot.hear /Is it lunch yet?/i, (res) ->
     res.send "According to formal tradition, Lunch cannot be discussed until 11am."
   
-  robot.hear /git test/i, (res) ->
-    res.send "test"
+  assemble= ['Time for Lunch, Assemble at 12, outside Adhara! Don\'t be late!', '12. Adhara. Be there.', 'Get to Adhara! Now! (Or at 12...)', '12 at Adhara \*pronto\*']
+  robot.hear /!assemble/i, (res) ->
+    res.send res.random assemble
