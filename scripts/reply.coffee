@@ -17,3 +17,9 @@ module.exports = (robot) ->
   assemble= ['Time for Lunch, Assemble at 12, outside Adhara! Don\'t be late!', '12. Adhara. Be there.', 'Get to Adhara! Now! (Or at 12...)', '12 at Adhara \*pronto\*']
   robot.hear /!assemble/i, (res) ->
     res.send res.random assemble
+
+  earlyassemble= ['We leaving early people! Chop Chop, outside Adhara 5 to 12, don\'t be late!', 'Pre-12 Lunch Warning. Get to Adhara \*pronto\*', 'The lunch train is leaving earlier than scheduled! Prepare to depart at 11:55.']
+  robot.hear /!earlyassemble/i, (res) ->
+    res.send res.random earlyassemble
+
+        
