@@ -5,7 +5,7 @@ module.exports = (robot) ->
     
 
 
-  lunch = ['You guys should definitely Bakery.', 'I am feeling the Bakery vibes today!', 'Baked goodness from Martleshams finest?', 'I wonder if KFC actually have chicken today.', 'Sometimes when I lunch I just like to chill out and have a pint, a good suggestion might be a pub lunch?', 'Are you lovin it, cause I am feeling like a McDonalds suggestion!', 'Cheeky BK?', 'There is a Sub on the Way...', 'It pains me to suggest the Hub, so I will not.', 'Lets go say hello to Gregg']
+  lunch = ['You guys should definitely Bakery.', 'I am feeling the B̺̰ą̶͉͉͚͔͞k̢͍͚̱͔̬͟ę̭̲̱̥r̨̪͉̀͘y̶̼̣̟̘̺ vibes today!', 'Baked goodness from Martlesham\'s finest?', 'I wonder if KFC actually have c̸̰̻͘ḩ̶͊͑i̵̢̹̓ç̶͆͝k̷̤͕̼̅̈́͐ȇ̸̤͓̆̍n̵̞̓̀͐ today.', 'Sometimes when I lunch I just like to chill out and have a pint, a good suggestion might be a pub lunch?', 'Are you l̷͖̀͊́̀͑́̅͛ȍ̴͈̼̻̺͓̮̮͙̫͎̫̘͔͓̘͈͎̲̲͉̑͜v̸̢̧̰͉͈̳̳̫͎̯̙̲̺̋̈́͌̿̓̑́̌͜i̴̢͇͕̇̽̀̊́͒̓͑̀̍̾̇̚͠n̴̨̡̡̛̰͕̮͎̥̣̤͚̳͚̯̩̳͉̥͇͇̑̒̈̍͌̎͆́́͜͝\' it, cause I am feeling like a McDonald\'s suggestion!', 'Cheeky BK?', 'There is a Sub on the Way...', 'It pains me to suggest the Hub, so I will not.', 'Lets go say hello to Gregg', 'Have you ever wondered what it feels like to die', 'Yeah, she's gone now..."']
 
   robot.hear /!lunch/i, (res) ->
     res.send res.random lunch
