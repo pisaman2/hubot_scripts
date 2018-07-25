@@ -11,4 +11,5 @@ module.exports = (robot) ->
   robot.respond /What does this look like?/i, (res) ->
     res.send "It doesn't look like anything to me."
 
-
+  robot.respond /Is it lunch yet?/i, (res) ->
+    res.send "According to formal tradition, Lunch cannot be discussed until 11am."
