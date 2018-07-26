@@ -19,9 +19,14 @@ module.exports = (robot) ->
   robot.hear /!assemble/i, (res) ->
     res.send res.random assemble
 
-  earlyassemble= ['We leaving early people! Chop Chop, outside Adhara 5 to 12, don\'t be late!', 'Pre-12 Lunch Warning. Get to Adhara \*pronto\*', 'The lunch train is leaving earlier than scheduled! Prepare to depart at 11:55.']
+  earlyassemble = ['We leaving early people! Chop Chop, outside Adhara 5 to 12, don\'t be late!', 'Pre-12 Lunch Warning. Get to Adhara \*pronto\*', 'The lunch train is leaving earlier than scheduled! Prepare to depart at 11:55.']
   robot.hear /!earlyassemble/i, (res) ->
     res.send res.random earlyassemble
+    
+  lateassemble = ['Hold it right there! We\'re lunching later than normal.', 'Don\'t you go anywhere, lunch is delayed', 'This is a service announcement. We\'re sorry to announce that the service to LUNCH has been delayed', 'I hope you\'re not hungry, because we aren\'t going anywhere!']
+  robot.hear /!lateassemble/i, (res) ->
+    res.send res.random lateassemble
+  
 
     
         
